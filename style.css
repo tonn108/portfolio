@@ -918,7 +918,7 @@ section nav ul li a:hover::after {
 @media screen and (max-width: 576px) {
     /* ปรับ main_wheel */
     .main_wheel {
-        margin-top: 5px !important; /* ลดระยะห่างด้านบน */
+        margin-top: 15px !important; /* ลดระยะห่างด้านบน */
         padding: 10px 0;
     }
 
