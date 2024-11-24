@@ -844,6 +844,11 @@ section nav ul li a:hover::after {
         line-height: 10px;
         margin-top: 5px;
     }
+    .contact .box .card .contact_text h3{
+        font-size: 5px;
+        line-height: 10px;
+        margin-top: 5px;
+    }
 
     .contact .box .card .small_card,
     .product .box .card .small_card {
