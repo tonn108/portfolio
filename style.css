@@ -695,6 +695,9 @@ section nav ul li a:hover::after {
     .contact .box {
         grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
     }
+    .product .box {
+        grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
+    }
 
     section .main .main_content .main_text h1 {
         font-size: 30px;
@@ -748,6 +751,12 @@ section nav ul li a:hover::after {
     section .main .main_content .main_text h1 {
         font-size: 24px;
         line-height: 32px;
+    }
+    .contact .box {
+        grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
+    }
+    .product .box {
+        grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
     }
 
     section .main .main_content .main_text p {
