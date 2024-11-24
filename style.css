@@ -839,8 +839,9 @@ section nav ul li a:hover::after {
         height: 240px;
         margin: 0 auto;
     }
-    .contact .box .card .products_text h2{
-        font-size: 14px;
+    .contact .box .card .contact_text h2{
+        font-size: 5px;
+        line-height: 10px;
         margin-top: 5px;
     }
 
@@ -869,8 +870,8 @@ section nav ul li a:hover::after {
         width: 100%;
     }
     .product .box .card .products_text h2{
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 5px;
+        line-height: 5px;
         padding: 10px;
         width: 100%;
     }
