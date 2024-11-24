@@ -1038,6 +1038,9 @@ html, body {
         font-size: 12px;
         line-height: 25px;
     }
+    .main_wheel{
+        margin-top: 10px !important;
+    }
 }
 
 /* ปรับระยะห่างสำหรับหน้าจอที่เล็กกว่า desktop */
