@@ -12,6 +12,10 @@ html{
 /*section*/
 section {
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     gap: 20px;
 }
@@ -77,6 +81,11 @@ section .main .main_content{
     background-size: cover;
     background-position: center;
     justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 section .main .main_content .main_text h1{
     font-size: 70px;
@@ -110,6 +119,8 @@ section .main .main_content .main_text p{
     border: 2px solid #c72092;
     border-radius: 20px;
     box-shadow: 0 0 8px #c72092;
+    width: 100%;
+    box-sizing: border-box;
 }
 section .main .social_icon{
     position: absolute;
@@ -130,6 +141,11 @@ section .about .about_main{
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .about_text {
@@ -161,6 +177,8 @@ section .about .about_main{
     color: #333;
     margin-bottom: 1.5rem;
     box-shadow: 0 0 8px #c72092;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /*contact*/
@@ -169,6 +187,11 @@ section .about .about_main{
     width: 100%;
     height: 140vh;
     padding: 25px 0;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .contact h1{
@@ -189,6 +212,11 @@ section .about .about_main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px 0;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .contact .box .card{
@@ -199,6 +227,9 @@ section .about .about_main{
     text-align: center;
     padding: 10px 20px;
     background: #f6f6f6;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .contact .box .card .small_card{
@@ -264,6 +295,8 @@ section .about .about_main{
     border: 2px solid #c72092;
     border-radius: 20px;
     box-shadow: 0 0 8px #c72092;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact .box .card .products_text h3{
@@ -289,6 +322,11 @@ section .about .about_main{
     padding: 100px 0;
     margin-top: 50px;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 .main_wheel h1{
     margin: 35px 0;
@@ -312,6 +350,11 @@ section .about .about_main{
     box-shadow: 0 0 8px #6c14d0;
     position: relative;
     transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .main_wheel .wrapper .container {
@@ -476,6 +519,8 @@ section .about .about_main{
     border: 2px solid #c72092;
     border-radius: 20px;
     box-shadow: 0 0 8px #c72092;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .product .box .card .products_text h3{
@@ -960,4 +1005,10 @@ section nav ul li a:hover::after {
     .contact .box .card .products_text h2 {
         font-size: 18px !important;
     }
+}
+
+/* ป้องกันการเลื่อนแนวนอน */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
