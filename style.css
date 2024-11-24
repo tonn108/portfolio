@@ -869,7 +869,7 @@ section nav ul li a:hover::after {
     .product .box .card .image img {
         width: 120px;
     }
-    .main_wheel .wrapper .container h1 {
+    .main_wheel  h1 {
         font-size: 28px;
     }
     .main_wheel{
@@ -912,5 +912,52 @@ section nav ul li a:hover::after {
     .product .box {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ปรับ main_wheel */
+    .main_wheel {
+        margin-top: 50px !important; /* ลดระยะห่างด้านบน */
+        padding: 20px 0;
+    }
+
+    .main_wheel .wrapper {
+        width: 90%;
+        max-width: 300px; /* ปรับขนาดให้เล็กลง */
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    /* ปรับขนาด h2 ใน product_text */
+    .product .box .card .products_text h2,
+    .contact .box .card .products_text h2 {
+        font-size: 20px !important; /* บังคับให้ใช้ขนาดนี้ */
+        margin-top: 10px;
+    }
+
+    /* ปรับขนาดอื่นๆ ที่เกี่ยวข้อง */
+    .product .box .card .products_text p,
+    .contact .box .card .products_text p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .product .box .card .products_text h3,
+    .contact .box .card .products_text h3 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
+/* เพิ่ม media query สำหรับหน้าจอที่เล็กมาก */
+@media screen and (max-width: 375px) {
+    .main_wheel .wrapper {
+        max-width: 250px; /* ปรับให้เล็กลงอีกสำหรับมือถือจอเล็ก */
+    }
+
+    .product .box .card .products_text h2,
+    .contact .box .card .products_text h2 {
+        font-size: 18px !important;
     }
 }
