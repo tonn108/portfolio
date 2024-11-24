@@ -820,8 +820,7 @@ section nav ul li a:hover::after {
 
     .about h1,
     .contact h1 ,
-    .product h1 ,
-    .main_wheel .wrapper .container h1 {
+    .product h1  {
         font-size: 28px;
     }
 
@@ -869,6 +868,12 @@ section nav ul li a:hover::after {
     .contact .box .card .image img,
     .product .box .card .image img {
         width: 120px;
+    }
+    .main_wheel .wrapper .container h1 {
+        font-size: 28px;
+    }
+    .main_wheel{
+        margin-top: 10px;
     }
     .product p{
         font-size: 13px;
