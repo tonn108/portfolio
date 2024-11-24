@@ -939,71 +939,58 @@ section nav ul li a:hover::after {
 @media screen and (max-width: 1200px) {
     .contact .box,
     .product .box {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 280px); /* หรือขนาดที่คุณต้องการ */
+        gap: 20px;
+    }
+
+    .contact .box .card,
+    .product .box .card {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 280px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .contact .box,
     .product .box {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 250px);
         gap: 15px;
+    }
+
+    .contact .box .card,
+    .product .box .card {
+        max-width: 250px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .contact .box,
     .product .box {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 280px; /* แสดง 1 คอลัมน์ */
+        gap: 15px;
+    }
+
+    .contact .box .card,
+    .product .box .card {
+        max-width: 280px;
     }
 }
 
-@media screen and (max-width: 576px) {
-    /* ปรับ main_wheel */
-    .main_wheel {
-        margin-top: 15px !important; /* ลดระยะห่างด้านบน */
-        padding: 10px 0;
-    }
-
-    .main_wheel .wrapper {
-        width: 90%;
-        max-width: 300px; /* ปรับขนาดให้เล็กลง */
-        padding: 15px;
-        margin: 0 auto;
-    }
-
-    /* ปรับขนาด h2 ใน product_text */
-    .product .box .card .products_text h2,
-    .contact .box .card .contact_text h2 {
-        font-size: 20px !important; /* บังคับให้ใช้ขนาดนี้ */
-        margin-top: 10px;
-    }
-
-    /* ปรับขนาดอื่นๆ ที่เกี่ยวข้อง */
-    .product .box .card .products_text p,
-    .contact .box .card .products_text p {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    .product .box .card .products_text h3,
-    .contact .box .card .products_text h3 {
-        font-size: 14px;
-        margin: 5px 0;
-    }
-}
-
-/* เพิ่ม media query สำหรับหน้าจอที่เล็กมาก */
+/* สำหรับ iPhone XS */
 @media screen and (max-width: 375px) {
-    .main_wheel .wrapper {
-        max-width: 250px; /* ปรับให้เล็กลงอีกสำหรับมือถือจอเล็ก */
+    .contact .box,
+    .product .box {
+        grid-template-columns: 250px;
+        gap: 10px;
     }
 
-    .product .box .card .products_text h2,
-    .contact .box .card .products_text h2 {
-        font-size: 18px !important;
+    .contact .box .card,
+    .product .box .card {
+        max-width: 250px;
     }
 }
 
