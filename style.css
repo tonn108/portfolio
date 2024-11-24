@@ -756,6 +756,7 @@ html, body {
     }
 }
 
+/* Small Mobile (375px - 576px) */
 @media screen and (max-width: 576px) {
     /* ปรับ Text */
     section .main .main_content .main_text h1 {
@@ -814,6 +815,9 @@ html, body {
     }
 
     /* ปรับ Wheel */
+    .main_wheel{
+        margin-top: 10px !important;
+    }
     .main_wheel .wrapper {
         width: 100%;
         padding: 8px;
