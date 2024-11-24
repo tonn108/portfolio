@@ -918,8 +918,8 @@ section nav ul li a:hover::after {
 @media screen and (max-width: 576px) {
     /* ปรับ main_wheel */
     .main_wheel {
-        margin-top: 10px !important; /* ลดระยะห่างด้านบน */
-        padding: 20px 0;
+        margin-top: 5px !important; /* ลดระยะห่างด้านบน */
+        padding: 10px 0;
     }
 
     .main_wheel .wrapper {
@@ -931,7 +931,7 @@ section nav ul li a:hover::after {
 
     /* ปรับขนาด h2 ใน product_text */
     .product .box .card .products_text h2,
-    .contact .box .card .products_text h2 {
+    .contact .box .card .contact_text h2 {
         font-size: 20px !important; /* บังคับให้ใช้ขนาดนี้ */
         margin-top: 10px;
     }
