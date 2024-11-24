@@ -1052,3 +1052,41 @@ html, body {
         line-height: 25px;
     }
 }
+
+/* ปรับระยะห่างสำหรับหน้าจอที่เล็กกว่า desktop */
+@media screen and (max-width: 1200px) {
+    .about,
+    .contact,
+    .main_wheel {
+        margin-top: 10px !important;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about,
+    .contact,
+    .main_wheel {
+        margin-top: 10px !important;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about,
+    .contact,
+    .main_wheel {
+        margin-top: 10px !important;
+        padding-top: 10px;
+    }
+}
+
+/* สำหรับ iPhone XS */
+@media screen and (max-width: 375px) {
+    .about,
+    .contact,
+    .main_wheel {
+        margin-top: 10px !important;
+        padding-top: 10px;
+    }
+}
