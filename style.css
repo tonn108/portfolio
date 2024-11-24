@@ -773,12 +773,16 @@ section nav ul li a:hover::after {
 
     section .main .main_content .main_text p {
         font-size: 14px;
-        line-height: 24px;
+        line-height: 20px;
         width: 90%;
+        text-shadow: #f6f6f6;
+        background-color: #f6f6f6;
     }
 
     .about h1,
-    .contact h1 {
+    .contact h1 ,
+    .product h1 ,
+    .main_wheel h1 {
         font-size: 36px;
     }
 
@@ -791,8 +795,12 @@ section nav ul li a:hover::after {
     /* ปรับขนาดการ์ด */
     .contact .box .card,
     .product .box .card {
-        width: 220px;
-        height: 260px;
+        width: 50px;
+        height: 60px;
+    }
+    .contact .box .card .products_text h2{
+        font-size: 14px;
+        margin-top: 5px;
     }
 }
 
